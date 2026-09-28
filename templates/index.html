@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie - AI Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+
+            <div>
+                <h1>EduGenie</h1>
+                <p>Your AI-powered learning assistant</p>
+            </div>
+
+            <span class="status-badge">
+                AI Learning
+            </span>
+
+        </div>
+    </header>
+
+
+    <nav class="navbar">
+        <div class="container nav-content">
+
+            <a href="#" class="logo">
+                EduGenie
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#qa">Ask AI</a>
+                <a href="#explain">Explain</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#summary">Summarize</a>
+                <a href="#learning">Learning Path</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <h2>
+                Learn Smarter with AI
+            </h2>
+
+            <p>
+                Ask questions, understand difficult topics,
+                generate quizzes, summarize study material,
+                and build personalized learning paths.
+            </p>
+
+        </section>
+
+
+        <section class="tool-grid">
+
+
+            <!-- Q&A -->
+            <article class="card" id="qa">
+
+                <div class="card-icon">
+                    💬
+                </div>
+
+                <h3>
+                    Ask a Question
+                </h3>
+
+                <p>
+                    Ask EduGenie any educational question.
+                </p>
+
+                <textarea id="qa-input" placeholder="Example: What is photosynthesis?"></textarea>
+
+                <button onclick="askQuestion()">
+                    Answer Question
+                </button>
+
+                <div id="qa-result" class="result"></div>
+
+            </article>
+
+
+            <!-- Explanation -->
+            <article class="card" id="explain">
+
+                <div class="card-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Explain a Topic
+                </h3>
+
+                <p>
+                    Get a simple explanation of a difficult topic.
+                </p>
+
+                <input id="explain-input" type="text" placeholder="Example: Pythagorean theorem">
+
+                <button onclick="explainTopic()">
+                    Explain Topic
+                </button>
+
+                <div id="explain-result" class="result"></div>
+
+            </article>
+
+
+            <!-- Quiz -->
+            <article class="card" id="quiz">
+
+                <div class="card-icon">
+                    📝
+                </div>
+
+                <h3>
+                    Generate Quiz
+                </h3>
+
+                <p>
+                    Turn your study material into a quiz.
+                </p>
+
+                <textarea id="quiz-input" placeholder="Paste your study material here..."></textarea>
+
+                <button onclick="generateQuiz()">
+                    Generate Quiz
+                </button>
+
+                <div id="quiz-result" class="result"></div>
+
+            </article>
+
+
+            <!-- Summary -->
+            <article class="card" id="summary">
+
+                <div class="card-icon">
+                    📖
+                </div>
+
+                <h3>
+                    Summarize Text
+                </h3>
+
+                <p>
+                    Convert long study material into revision notes.
+                </p>
+
+                <textarea id="summary-input" placeholder="Paste your educational text here..."></textarea>
+
+                <button onclick="summarizeText()">
+                    Summarize Text
+                </button>
+
+                <div id="summary-result" class="result"></div>
+
+            </article>
+
+
+            <!-- Learning Path -->
+            <article class="card" id="learning">
+
+                <div class="card-icon">
+                    🧭
+                </div>
+
+                <h3>
+                    Learning Path
+                </h3>
+
+                <p>
+                    Build a structured learning journey.
+                </p>
+
+                <input id="learning-input" type="text" placeholder="Example: Python programming">
+
+                <button onclick="buildLearningPath()">
+                    Build Learning Path
+                </button>
+
+                <div id="learning-result" class="result"></div>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                EduGenie &copy; 2026
+            </p>
+
+            <p>
+                AI-powered educational assistance
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="/static/css/app.js"></script>
+
+</body>
+
+</html>
